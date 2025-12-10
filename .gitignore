@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Models
+*.h5
+*.pb
+*.tflite
+*.onnx
+models/**/*.tflite
+models/**/*.h5
+
+# Data
+data/raw/**/*.jpg
+data/raw/**/*.png
+data/processed/
+data/captures/
+*.db
+*.sqlite
+
+# Logs
+logs/*.log
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+/tmp/
+*.tmp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+.env.local
+

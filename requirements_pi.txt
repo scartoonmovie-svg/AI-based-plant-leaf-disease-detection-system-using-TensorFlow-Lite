@@ -1,0 +1,25 @@
+# AgriGuard v1 - Raspberry Pi Optimized Requirements
+# Lightweight versions for Pi deployment
+
+# Core ML - Use full TensorFlow Lite (tflite-runtime not available for Python 3.13)
+# For Python 3.11 or older, you can use: tflite-runtime>=2.13.0
+# For Python 3.13+, use full TensorFlow Lite
+tensorflow>=2.13.0; python_version >= "3.13"
+tflite-runtime>=2.13.0; python_version < "3.13"
+
+# Computer Vision
+opencv-python-headless>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# Web Framework
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# Audio/TTS
+pyttsx3>=2.90
+
+# Utilities
+python-dotenv>=1.0.0
+click>=8.1.0
+

@@ -1,0 +1,16 @@
+[Unit]
+Description=AgriGuard v1 - Smart Agriculture Assistant
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/AgriGuard
+Environment="PATH=/home/pi/AgriGuard/venv/bin"
+ExecStart=/home/pi/AgriGuard/venv/bin/python pi_app/main_pi.py --mode web --host 0.0.0.0 --port 5000
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
